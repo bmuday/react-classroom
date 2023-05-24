@@ -10,22 +10,17 @@ const Section = () => {
     nbStudents,
   };
 
-  // CSS
-  let style = {
-    paragraph1: { backgroundColor: "yellow" }, //camelCase
-    paragraph2: { backgroundColor: "red" },
-  };
   return (
-    <div>
+    <div id="div1">
       <ul>
         {flowers.map((flower, index) => (
           <li key={index}>{flower}</li>
         ))}
       </ul>
-      <p style={style.paragraph1}>
+      <p className="red">
         {name} is teacher of a class of {nbStudents} students.
       </p>
-      <p style={style.paragraph2}>He lives in {city}.</p>
+      <p>He lives in {city}.</p>
       <table>
         <th>Classroom</th>
         <tr>
